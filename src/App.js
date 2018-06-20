@@ -14,6 +14,7 @@ class App extends Component {
   render() {
     return (
       <div className="App">
+        <div>Dates:</div>
         <div>{this.addDays(-1)}</div>
         <div>{this.addDays(-2)}</div>
         <div>{this.addDays(-5)}</div>

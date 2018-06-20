@@ -3,12 +3,12 @@ import logo from './logo.svg';
 import './App.css';
 
 class App extends Component {
-  startDate = new Date('2018-06-14T17:28:01.893Z');
+  startDate = new Date('2018-06-14T00:00:00.000Z');
 
   addDays(days) {
     let day = new Date();
     day.setDate(day.getDate() + days);
-    return day >= this.startDate ? day.toLocaleDateString() : '';
+    return day >= this.startDate ? day.toLocaleDateString('ru') : '';
   }
 
   render() {
